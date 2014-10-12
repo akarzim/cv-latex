@@ -1,0 +1,189 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% François Vantomme Resume/CV
+% XeLaTeX Template
+% Version 1.0 (12/10/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+\begin{document}
+
+\header{François}{VANTOMME}{développeur web} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+\faHome{} 250 rue de la Carnoy
+59130 Lambersart
+France
+~
+\faPhone{} \href{tel:003360194501}{+33 (0)6 01 94 50 12}
+~
+\faEnvelope{} \href{mailto:akarzim@gmail.com}{akarzim@gmail.com}
+\faGithub{} \href{https://github.com/akarzim}{github.com/akarzim}
+\section{langues}
+français
+anglais
+\section{langages \& frameworks}
+{\color{red} \faStar} Ruby (Rails)
+Python (Django)
+Coffeescript, Javascript
+AngularJS, NodeJS
+CSS3 \& HTML5
+Haml \& Jade
+Sass \& Less
+\LaTeX{}
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\section{expérience}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{depuis 2008}
+{PleinNet}
+{Villeneuve d'Ascq, France}
+{\emph{Ingénieur Développement}
+\vspace{5pt}\\
+\textbf{Développement d'une application SaaS dédiée aux métiers du négoce et de l'import.} Tout le processus d'achat à l'international est ainsi couvert à travers un ensemble de modules :
+\begin{itemize}
+\item demande et de remise de prix
+\item outil de calcul temps réel du coût d'import prenant en compte l'ensemble des frais liés à l'import
+\item suivi logistique et outil de supervision
+\item de nombreuses autres fonctionnalités : système de partage, recherche transversale, synchronisation avec Sage…
+\end{itemize}
+\vspace{5pt}
+Ayant intégré la société à sa création, j'ai participé à la réflexion et au développement sur l'ensemble de ces fonctionnalités. Initialement développée en \hi{Python} avec le \emph{framework} \hi{Django}, l'application a été entièrement réécrite en \hi{Ruby} courant 2012. Basée cette fois sur le \emph{framework} \hi{Ruby on Rails}. Les deux versions partagent la même base de données PostgreSQL, permettant ainsi une livraison incrémentale de cette nouvelle mouture.
+\vspace{5pt}\\
+Nous avons par la suite réécrit l'interface client en \hi{AngularJS}. La partie serveur ne délivrant alors plus qu'une API permettant de dialoguer avec la base de donnée. Ainsi le rendu est totalement dissocié du moteur de l'application, ce qui clarifie grandement le code, simplifie la testabilité et améliore la réactivité globale de l'application.
+Récemment nous avons réécrit l'outil de répartition automatique de containers à l'aide de \hi{NodeJS} et \hi{GLPK} (bibliothèque de programmation linéaire), le rendant ainsi indépendant du reste de l'application et bien plus performant.
+\vspace{5pt}\\
+J'ai également réalisé le \href{http://www.geniustrade.com}{site web de la société} et mis en place un environnement de tests unitaires, d'intégration et fonctionnels.
+}
+%------------------------------------------------
+\entry
+{2006--2008}
+{Diet'Avenue}
+{Lille, France}
+{\emph{Chef de Projet Informatique}
+\vspace{5pt}\\
+\textbf{Développement d'une solution dédiée à l'amincissement et la remise en forme.} L'application s'articulait autour de deux axes :
+\begin{itemize}
+\item un \emph{frontend} permettant au client de choisir un programme adapté en fonction d'un indice développé en interne (comparable à l'IMC) et d'une courbe de perte de poids. Le client a ensuite accès à son suivi, ses prochains rendez-vous, ainsi qu'à une boutique en ligne.
+\item côté \emph{backoffice}, les diététiciennes, esthéticiennes et coachs sportifs ont accès à leur agenda et au suivi de leur clientèle. 
+\end{itemize}
+\vspace{5pt}
+L'application était écrite en \hi{CGI/Perl}. Je me suis formé à ce langage lorsque j'ai intégré la société. J'ai principalement travaillé à la refonte de l'application et à la mise en place de procédures de travail. L'équipe grandissant, j'ai continué le développement tout en supervisant le projet.
+}
+%------------------------------------------------
+\entry
+{2005-2006}
+{OS System}
+{Lille, France}
+{\emph{Développeur web}
+\vspace{5pt}\\
+\textbf{Mise en place de solutions OS Commerce} et développements spécifiques en \hi{PHP} liés au e-commerce.}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\par\vspace{5\parskip}
+\section{formation}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2005}
+{Maîtrise {\normalfont Informatique (GMI)}}
+{IUP, Université de Lille1}
+{Stage en laboratoire ayant pour sujet l'«Analyse Statique de Bytecode Java»}
+%------------------------------------------------
+\entry
+{2004}
+{Licence {\normalfont Informatique (GMI)}}
+{IUP, Université de Lille1}
+{}
+%------------------------------------------------
+\entry
+{2003}
+{DUT {\normalfont Informatique}}
+{IUT A, Université de Lille1}
+{Option Gestion d'Entreprise}
+%------------------------------------------------
+\entry
+{2001}
+{Baccalauréat {\normalfont STI Électronique}}
+{Lycée Ozanam, Lille}
+{Option Informatique}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+\par\vspace{5\parskip}
+\section{intérêts et loisirs}
+
+\textbf{\hi{professionnel}} conférences (Take Off Talks, Ch'ti JUG), veille technologique, méthodes agiles, techniques d'organisation et de gestion du temps.
+\vspace{10pt}\\
+\textbf{\hi{personnel}} lecture (Asimov, Herbert, Pratchett…), danse folk et traditionnelle, randonnée (Tour du Mont-Blanc, GR20…), cyclotourisme, escalade, course à pied, slackline, jonglage.
+\vspace{10pt}\\
+\textbf{\hi{associatif}}
+\vspace{5pt}\\
+\begin{entrylist}
+\entry
+{Depuis 2014}
+{{\normalfont apprentissage de l'accordéon au sein des «Bretons du Nord»}}
+{Lille}
+{}
+%------------------------------------------------
+\entry
+{Depuis 2013}
+{{\normalfont bénévole sur les «Grands Bals de l'Europe»}}
+{Auvergne}
+{festivals de danses traditionnelles d'Europe et d'ailleurs}
+%------------------------------------------------
+\entry
+{Depuis 2010}
+{{\normalfont membre du cercle de danse bretonne «Bretons du Nord»}}
+{Lomme}
+{mars 2014, avant-première de Tri Yann à Gayant Expo (Douai)}
+%------------------------------------------------
+\entry
+{Depuis 2010}
+{{\normalfont membre et vice-trésorier de l'association Keltic Dream}}
+{Mons-en-Barœul}
+{danses irlandaises de Ceili \& Danses traditionnelles de France et d'Europe}
+%------------------------------------------------
+\entry
+{Depuis 2005}
+{{\normalfont membre du CA du club d'escalade Bou'd'Brousse}}
+{Roubaix}
+{Administrateur du site web de l'association}
+%------------------------------------------------
+\end{entrylist}
+%----------------------------------------------------------------------------------------
+
+\end{document}
